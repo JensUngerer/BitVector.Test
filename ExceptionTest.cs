@@ -14,7 +14,7 @@ namespace JensUngerer.BitVector.Test
         public void WrongIndexException()
         {
             // ARRANGE
-            const int SIZE = 32;
+            const int SIZE = BitVector.NUMBER_OF_BITS_IN_A_BITVECTOR64;
             var bitVector = new BitVector();
 
             // ACT & ASSERT

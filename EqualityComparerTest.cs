@@ -30,9 +30,9 @@ namespace JensUngerer.BitVector.Test
             var index = 0;
             const int BIT_TO_SET_WITHIN_BITVECTOR = 7;
 
-            while (getGlobalIndex(index, BitVector.NUMBER_OF_BITS_IN_A_BITVECTOR32, BIT_TO_SET_WITHIN_BITVECTOR) < 1000)
+            while (getGlobalIndex(index, BitVector.NUMBER_OF_BITS_IN_A_BITVECTOR64, BIT_TO_SET_WITHIN_BITVECTOR) < 1000)
             {
-                bitVector[getGlobalIndex(index, BitVector.NUMBER_OF_BITS_IN_A_BITVECTOR32, BIT_TO_SET_WITHIN_BITVECTOR)] = true;
+                bitVector[getGlobalIndex(index, BitVector.NUMBER_OF_BITS_IN_A_BITVECTOR64, BIT_TO_SET_WITHIN_BITVECTOR)] = true;
 
                 // DEBUGGING:
                 // System.Console.WriteLine(bitVector.ToString());
@@ -63,9 +63,9 @@ namespace JensUngerer.BitVector.Test
             var hashSet = new HashSet<BitVector>(new BitVectorEqualityComparer());
             var index = 0;
             const int BASE_INDEX = 1;
-            while (getGlobalIndex(index, BitVector.NUMBER_OF_BITS_IN_A_BITVECTOR32, BASE_INDEX) < 1000)
+            while (getGlobalIndex(index, BitVector.NUMBER_OF_BITS_IN_A_BITVECTOR64, BASE_INDEX) < 1000)
             {
-                bitVector[getGlobalIndex(index, BitVector.NUMBER_OF_BITS_IN_A_BITVECTOR32, BASE_INDEX)] = true;
+                bitVector[getGlobalIndex(index, BitVector.NUMBER_OF_BITS_IN_A_BITVECTOR64, BASE_INDEX)] = true;
 
                 // DEBUGGING:
                 // System.Console.WriteLine(bitVector.ToString());
